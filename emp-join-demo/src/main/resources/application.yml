@@ -1,0 +1,27 @@
+server:
+  port: 9011
+
+logging:
+  level:
+    root: INFO
+spring:
+  application:
+    name: EMP-SERVICE
+#  datasource:
+#    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/employee_join
+#    username: root
+#    password: admin
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#  jpa:
+#    hibernate:
+##      ddl-auto: create
+#      ddl-auto: update
+#    show-sql: true
+#    properties:
+#      database-platform : org.hibernate.dialect.MySQL5InnoDBDialect
+
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
